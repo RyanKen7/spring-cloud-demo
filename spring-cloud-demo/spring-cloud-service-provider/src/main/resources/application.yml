@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-cloud-service-provider
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka-server1:17001/eureka,http://eureka-server2:17002/eureka

@@ -1,0 +1,14 @@
+server:
+  port: 16001
+spring:
+  application:
+    name: spring-cloud-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server1:17001/eureka,http://eureka-server2:17002/eureka
+filter:
+  while-list: /demo/login
+ribbon:
+  eureka:
+    enabled: true
